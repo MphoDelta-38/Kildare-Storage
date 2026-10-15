@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Booking | Kildare Storage</title>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body>
+<header class="site-header">
+<nav class="navbar">
+<a class="logo" href="index.html">Kildare <span>Storage</span></a>
+<ul class="nav-links">
+<li><a href="index.html"><span><span data-i18n-en="Home" data-i18n-zu="Ikhaya">Home</span></span></a></li>
+<li><a href="about.html"><span><span data-i18n-en="About Us" data-i18n-zu="Mayelana Nathi">About Us</span></span></a></li>
+<li><a href="services.html"><span><span data-i18n-en="Our Services" data-i18n-zu="Izinsizakalo Zethu">Our Services</span></span></a></li>
+<li><a href="index.html#benefits"><span data-i18n-en="Why Choose Us" data-i18n-zu="Kungani Usikhetha">Why Choose Us</span></a></li>
+<li><a href="pricing.html"><span><span data-i18n-en="Pricing" data-i18n-zu="Amanani">Pricing</span></span></a></li>
+<li><a href="contact.html"><span><span data-i18n-en="Contact" data-i18n-zu="Xhumana Nathi">Contact</span></span></a></li>
+<li><a href="gallery.html"><span><span data-i18n-en="Gallery" data-i18n-zu="Igalari">Gallery</span></span></a></li></ul>
+<label class="language-control" data-language-label="true" for="languageSelect"><span data-i18n-en="Language / Ulimi" data-i18n-zu="Ulimi / Language">Language / Ulimi</span><select aria-label="Choose language" id="languageSelect"><option data-i18n-en="English" data-i18n-zu="English" value="en">English</option><option data-i18n-en="isiZulu" data-i18n-zu="isiZulu" value="zu">isiZulu</option></select></label></nav>
+</header>
+<main>
+<section class="page-banner">
+<p class="eyebrow"><span data-i18n-en="BOOKING ENQUIRY" data-i18n-zu="UMBUZO WOKUBHUKHA">BOOKING ENQUIRY</span></p>
+<h1><span data-i18n-en="Tell Us What You Need" data-i18n-zu="Sitshele Okudingayo">Tell Us What You Need</span></h1>
+<p><span data-i18n-en="Complete the form and prepare your storage enquiry." data-i18n-zu="Gcwalisa leli fomu ukuze uthumele umbuzo wakho mayelana nokugcina izinto.">Complete the form and prepare your storage enquiry.</span></p>
+</section>
+<section class="booking-section">
+<div class="success-message" hidden="" id="bookingMessage" role="status"></div>
+<form id="bookingForm" novalidate="">
+<label for="name"><span data-i18n-en="Full Name *" data-i18n-zu="Amagama Aphelele *">Full Name *</span></label>
+<input autocomplete="name" id="name" minlength="2" name="name" required="" type="text"/>
+<small class="field-error"></small>
+<label for="email"><span data-i18n-en="Email Address *" data-i18n-zu="Ikheli Le-imeyili *">Email Address *</span></label>
+<input autocomplete="email" id="email" name="email" required="" type="email"/>
+<small class="field-error"></small>
+<label for="phone"><span data-i18n-en="Contact Number *" data-i18n-zu="Inombolo Yokuxhumana *">Contact Number *</span></label>
+<input autocomplete="tel" id="phone" name="phone" required="" type="tel"/>
+<small class="field-error"></small>
+<label for="size"><span data-i18n-en="Storage Size *" data-i18n-zu="Usayizi Wendawo Yokugcina *">Storage Size *</span></label>
+<select id="size" name="size" required="">
+<option data-i18n-en="Choose a size" data-i18n-zu="Khetha usayizi" value="">Choose a size</option>
+<option data-i18n-en="Small" data-i18n-zu="Encane" value="Small">Small</option>
+<option data-i18n-en="Medium" data-i18n-zu="Ephakathi" value="Medium">Medium</option>
+<option data-i18n-en="Large" data-i18n-zu="Enkulu" value="Large">Large</option>
+</select>
+<small class="field-error"></small>
+<label for="start_date"><span data-i18n-en="Start Date *" data-i18n-zu="Usuku Lokuqala *">Start Date *</span></label>
+<input id="start_date" name="start_date" required="" type="date"/>
+<small class="field-error"></small>
+<label for="end_date"><span data-i18n-en="End Date" data-i18n-zu="Usuku Lokuphela">End Date</span></label>
+<input id="end_date" name="end_date" type="date"/>
+<small class="field-error"></small>
+<label for="message"><span data-i18n-en="Additional Details" data-i18n-zu="Eminye Imininingwane">Additional Details</span></label>
+<textarea id="message" maxlength="1500" name="message" rows="5"></textarea>
+<button class="btn" type="submit"><span data-i18n-en="Submit Enquiry" data-i18n-zu="Thumela Umbuzo">Submit Enquiry</span></button>
+<p class="form-note"><span data-i18n-en="* Required fields. Submission is an enquiry, not a confirmed reservation." data-i18n-zu="* Izinkambu ezidingekayo. Lokhu kuwumbuzo kuphela, akusikho ukubhuka okuqinisekisiwe.">* Required fields. Submission is an enquiry, not a confirmed reservation.</span></p>
+</form>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-content">
+<div>
+<a class="logo footer-logo" href="index.html">
+                Kildare <span>Storage</span>
+</a>
+</div>
+<div>
+<h3><span data-i18n-en="Quick Links" data-i18n-zu="Izixhumanisi Ezisheshayo">Quick Links</span></h3>
+<a href="index.html"><span><span data-i18n-en="Home" data-i18n-zu="Ikhaya">Home</span></span></a>
+<a href="about.html"><span><span data-i18n-en="About Us" data-i18n-zu="Mayelana Nathi">About Us</span></span></a>
+<a href="services.html"><span><span data-i18n-en="Our Services" data-i18n-zu="Izinsizakalo Zethu">Our Services</span></span></a>
+<a href="pricing.html"><span><span data-i18n-en="Pricing" data-i18n-zu="Amanani">Pricing</span></span></a>
+<a href="contact.html"><span><span data-i18n-en="Contact" data-i18n-zu="Xhumana Nathi">Contact</span></span></a>
+</div>
+</div>
+<p class="copyright"><span data-i18n-en="© 2026 Kildare Storage. All rights reserved." data-i18n-zu="© 2026 Kildare Storage. Wonke amalungelo agodliwe.">© 2026 Kildare Storage. All rights reserved.</span></p>
+</footer>
+</body>
+</html>
